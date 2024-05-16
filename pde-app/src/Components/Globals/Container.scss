@@ -1,0 +1,8 @@
+
+@import '../../assets/styles/sass/variables.scss';
+@import '../../assets/styles/sass/mixins.scss';
+
+.mainContainer{
+    @include container(100vw, 100vh, $primaryColor);
+
+}

@@ -1,0 +1,26 @@
+@import '../../../../../assets/styles/sass/mixins.scss';
+@import '../../../../../assets/styles/sass/variables.scss';
+
+.card-container{
+    @include flex-container(column,center, flex-start, wrap);
+    width: 23%;
+}
+
+.card-img{  
+    
+    img{
+        width: 100%;
+    }
+   
+}
+
+.card-text{
+    width: 90%;
+    margin-top: 10px
+}
+
+.content-container{
+    @include flex-container(row,space-between, center, wrap);
+    margin-top: 100px;
+   
+}

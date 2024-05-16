@@ -1,0 +1,49 @@
+@import '../../../../assets/styles/sass/mixins.scss';
+@import '../../../../assets/styles/sass/variables.scss';
+
+.main-content{
+    @include flex-container(column,center, center, wrap);
+    width: 70%;
+    margin-top: 40px;
+}
+
+.main-image {
+   width: 45%;
+    margin-right: 5%;
+   img{
+    height: 300px;
+    width: 100%;
+    
+   }
+}
+
+
+
+.content {
+    // padding: 2px;
+    @include flex-container(row,center, center, nowrap);
+    margin-top: 100px;
+    
+}
+
+.main-text{
+    @include flex-container(column,center, center, wrap);
+    width: 45%;
+    color: $logocolor;
+    margin-left: 5%;
+    
+   h1{
+        font-size:$fontsize36;
+        font-weight: 700;
+    }
+    p {
+        font-size:$fontsize16;
+    }
+ 
+}
+
+.view-container{
+    @include flex-container(row,flex-start, center, wrap);
+    width: 100%;
+    cursor: pointer;
+}

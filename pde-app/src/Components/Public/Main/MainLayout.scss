@@ -1,0 +1,10 @@
+@import '../../../assets/styles/sass/mixins.scss';
+@import '../../../assets/styles/sass/variables.scss';
+
+
+.footer-container{
+    @include flex-container(row, center, center, wrap);
+    width: 100%;
+    background-color: $secondarycolor;
+    
+}

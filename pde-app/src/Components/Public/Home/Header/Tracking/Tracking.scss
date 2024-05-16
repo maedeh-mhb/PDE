@@ -1,0 +1,42 @@
+@import '../../../../../assets/styles/sass/mixins.scss';
+@import'../../../../../assets/styles/sass/variables.scss';
+
+.tracking{
+    @include flex-container(column,center, flex-start, wrap);
+    margin-bottom: 50px;
+    p{
+        font-weight: 700;
+        font-size: $fontsize24;
+        color: $maincolor;
+    }
+}
+
+.tracking-box{
+    @include flex-container(row,flex-start, center, wrap);
+    padding: 5px;
+    width: 40vw;
+    height: 70px;
+    border-radius: 24px;
+    background-color: $maincolor;
+    input{
+        border: none;
+        margin-left: 35px;
+        padding: 10px;
+        outline: none;
+        width: 227px;
+        ::placeholder{
+            font-size: 20px;
+        }
+    };
+    button {
+        background-color: $textColor300;
+        border: none;
+        width: 22%;
+        height: 61px;
+        border-radius: 24px;
+        margin-left: 5px;
+        color: $maincolor;
+        font-size: $fontsize24;
+       
+    }
+}

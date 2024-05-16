@@ -1,0 +1,13 @@
+@import '../../assets/styles/sass/mixins.scss';
+@import '../../assets/styles/sass/variables.scss';
+
+.view{
+    @include flex-container(row, center, center, wrap);
+    color: $blackcolor;
+    font-size: $fontsize16;
+    text-align:center;
+    img{
+        margin-left: 5px;
+    }
+    cursor: pointer;
+}

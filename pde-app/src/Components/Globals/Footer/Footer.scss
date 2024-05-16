@@ -1,0 +1,43 @@
+@import '../../../assets/styles/sass/variables.scss';
+@import '../../../assets/styles/sass/mixins.scss';
+
+.footer {
+    @include flex-container(row, space-between, center, wrap);
+    width: 70%;
+    margin-top: 30px;
+    background-color: $secondarycolor;
+    color: $textColor400;
+    padding-bottom: 40px;
+    ul{
+        width: 100%;
+        list-style: none;
+        h1{
+            font-size: $fontsize16;
+            font-weight: 400;
+        }
+        li{
+            margin-bottom: 5px;
+        }
+
+    }
+}
+
+.tools{
+    font-size: $fontsize16;
+}
+.address {
+    font-size: $fontsize12;
+}
+
+.privacy-container{
+    @include flex-container(row, space-evenly, center, wrap);
+    background-color: $textColor300;
+    width: 100%;
+    color: $secondarycolor;
+    padding: 10px;
+}
+
+.privacy{
+    width: 15%;
+    @include flex-container(row, space-between, center, wrap);
+}

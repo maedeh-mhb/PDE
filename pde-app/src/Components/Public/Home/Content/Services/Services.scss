@@ -1,0 +1,20 @@
+@import '../../../../../assets/styles/sass/variables.scss';
+@import '../../../../../assets/styles/sass/mixins.scss';
+
+.service{
+    @include flex-container(row,space-between, center, nowrap);
+    width: 100%;
+    padding: 40px 0;
+}
+
+.service-item {
+    @include flex-container(column,center, center, nowrap);
+    width: 213.14px;
+    height: 145px;
+    border-radius: 16px;
+    background-color: $secondarycolor;
+    color: $logocolor;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}

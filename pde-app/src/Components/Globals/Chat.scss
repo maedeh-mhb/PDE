@@ -1,0 +1,16 @@
+@import '../../assets/styles/sass/variables.scss';
+@import '../../assets/styles/sass/mixins.scss';
+
+.chat-container{
+    @include flex-container(row, center, center, wrap);
+    width: 205px;
+    height: 80px;
+    border-radius: 16px;
+    font-size: $fontsize24;
+    background-color: $textColor300;
+    color: $maincolor;
+    img{
+        width:70px;
+        height: 60px;
+    }
+}

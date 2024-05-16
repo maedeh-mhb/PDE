@@ -1,0 +1,68 @@
+@import '../../assets/styles/sass/mixins.scss';
+@import '../../assets/styles/sass/variables.scss';
+.navbar{
+    @include flex-container(row, space-around, center, wrap);
+    padding: 5px;
+    height: 60px;
+    width: 100%;
+    background-color: $maincolor;
+    position: fixed
+}
+
+.menu{
+    @include flex-container(row, space-around, center, wrap);
+   width: 80%;
+    color: $textColor;
+}
+
+.auth-container{
+    @include flex-container(row, space-around, center, wrap);
+    width: 27%;
+    color: $textColor;
+}
+
+.menu-item {
+    @include flex-container(row, flex-start, center, wrap);
+    width: 80px;
+   cursor: pointer;
+    img {
+        margin-left: 7px;
+        width:15px
+    }
+}
+
+.lan-container{
+    @include flex-container(row, space-around, center, wrap);
+    width: 30%;
+    color: $textColor200;
+}
+
+.search-box {
+    width: 24px;
+    height: 24px;
+}
+
+.login-but-container {
+    border-radius: 16px;
+    background-color: $background;
+    padding: 8px 15px;
+    border-width: 0;
+    color: $textColor;
+    @include flex-container(row, space-around, center, wrap);
+    cursor: pointer;
+}
+.logo-container{
+    width: 24px;
+    height: 24px;
+}
+
+.login-but {
+    border: none;
+    background-color: $background;
+    
+}
+
+.menu-container{
+    width: 40%;
+    @include flex-container(row, space-between, center, wrap);
+}
