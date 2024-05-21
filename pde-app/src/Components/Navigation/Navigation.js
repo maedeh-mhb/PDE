@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route,Routes } from 'react-router-dom';
-import { Home,Signup,Login } from '../../Constants/Routes';
+import { Home,Signup,Login,Tracking } from '../../Constants/Routes';
 import HomePage from '../Public/Home/HomePage';
 import SignupPage from '../Public/Auth/SignupPage';
 import LoginPage from '../Public/Auth/LoginPage';
@@ -12,7 +12,7 @@ const Navigation = () => {
               <Route path={Home} element={<HomePage/>}/>     
               <Route path={Signup} element={<SignupPage/>}/> 
               <Route path={Login} element={<LoginPage/>}/> 
-              <Route path={Login} element={<TrackingPage/>}/> 
+              <Route path={Tracking} element={<TrackingPage/>}/> 
         </Routes>
     );
 };

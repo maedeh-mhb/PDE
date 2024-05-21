@@ -1,0 +1,23 @@
+@import '../../../assets/styles/sass/variables.scss';
+@import '../../../assets/styles/sass/mixins.scss';
+
+  .process {
+    
+    @include flex-container(column, center, center, wrap);
+  
+  }
+
+  .delivary{
+    @include flex-container(column, center, center, wrap);
+    border-radius: 16px;
+    background-color: $secondarycolor;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .tracking-code{
+    padding: 30px;
+    @include flex-container(column, center, flex-start, wrap);
+    width: 100%;
+    color: $textColor;
+  }

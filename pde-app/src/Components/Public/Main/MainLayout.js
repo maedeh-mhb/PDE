@@ -5,18 +5,17 @@ import Navigation from '../../Navigation/Navigation';
 import Footer from '../../Globals/Footer/Footer';
 import Privacy from '../../Globals/Footer/Privacy';
 import './MainLayout.scss'
+import { useLocation } from 'react-router-dom';
 
 const MainLayout = () => {
+    const {pathname}= useLocation();
+    console.log(pathname)
     return (
         <div style={{overflowX:'hidden'}}>
-        <Container customClassName='mainContainer'>
+        <div className='mainContainer'>
               <NavigationBar/>
               <Navigation/>
-              <div className='footer-container'>
-              <Footer/>
-              </div>
-              <Privacy/>
-        </Container>
+        </div>
         </div>
     );
 };

@@ -6,3 +6,20 @@
     @include container(100vw, 100vh, $primaryColor);
 
 }
+.inner{
+    @include flex-container(column, center, center, wrap);
+    width: 72%;
+   
+}
+
+.footer-container{
+    @include flex-container(row, center, center, wrap);
+    width: 100%;
+    background-color: $secondarycolor;
+   
+}
+
+.flex-container{
+    @include container(100vw, 100vh, $primaryColor);
+    @include flex-container(column, center, center, wrap);
+}

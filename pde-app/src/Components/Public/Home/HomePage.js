@@ -5,20 +5,22 @@ import MainContent from './Content/MainContent';
 import Chat from '../../Globals/Chat';
 import Footer from '../../Globals/Footer/Footer';
 import Privacy from '../../Globals/Footer/Privacy';
+import InnerContainer from '../../Globals/InnerContainer';
+import Container from '../../Globals/Container';
 
 const HomePage = () => {
  
 console.log("HOME")
     return (
-        <div className='home-layout'>
+        <Container customClassName='home-layout'>
             <HeaderContent />
-            <MainContent/>
+            <InnerContainer>
+                <MainContent/>         
+            </InnerContainer>     
             <div className='chat'>
-                <Chat/>
-            </div>
-
-         
-        </div>
+                    <Chat/>
+            </div>      
+        </Container>
     );
 };
 

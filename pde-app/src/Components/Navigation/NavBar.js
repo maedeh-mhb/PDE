@@ -8,12 +8,12 @@ import Authentication from './Authentication/Authentication';
 
 const NavigationBar = () => {
     return (
-        <Container>
+        <>
             <div className='navbar'>
                 <Menu/>
                 <Authentication/>
             </div>
-        </Container>
+        </>
     );
 };
 
